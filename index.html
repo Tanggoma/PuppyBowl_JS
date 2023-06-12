@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>PuppyBowl</title>
+  <script src="https://kit.fontawesome.com/cdfe5ee648.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <header class="flex-header">
+    <h1> Puppy Bowl Player </h1>
+    <i class="fa-solid fa-paw fa-bounce icon"></i>
+    <!-- Add button link to form -->
+    <button id="add-button"> <span>+</span> New Player</button>
+    <button id="playerByTeam"> Players by Team </button>
+  </header>
+
   <!-- form to add new players -->
   <div id="new-player-form"></div>
 
   <!-- container for all players -->
   <div id="all-players-container"></div>
+  <!-- container for single players -->
+  <div id="player-detail"> </div>
+
+  <div id="team-container"></div>
 
   <!-- import JavaScript -->
-  <script src="./script.js"></script>
+  <script type="module" src="./api.js"></script>
+  <script type="module" src="./render.js"></script>
+
 </body>
+
+<footer> &copy; tanggoma </footer>
+
 </html>
